@@ -57,3 +57,7 @@ app.use(
     saveUninitialized: false
   })
 );
+
+app.get("/", (req, res, next) => {
+    res.render("index");
+  });
